@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial=1.0,user-scalable=no">
+	<meta charset="utf-8">
+	<title>My own MuSic oFFice</title>
+	<link rel="stylesheet" href="../Font/common.css">
+	<link rel="stylesheet" href="../Font/Font-Awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="MyMusicOffice.css">
+</head>
+<body>
+	<div class="top" onselectstart="return false;">
+		<a class="Backbutton" href="javascript:;" style="display: inline-block;"><i class="fa fa-angle-left fa-2x"></i></a>
+		<a class="Forwardbutton" href="javascript:;" style="display: inline-block;"><i class="fa fa-angle-right fa-2x"></i></a>
+		<div class="search">
+			<input class="searchbox" type="text" placeholder="Search">
+			<a class="searchbutton" href="javascript:;" style="display: inline-block;"><i class="fa fa-search fa-1x"></i></a>
+		</div>
+		<a href="javascript:;" class="LoginOrRegister">
+		LoginOrRegister
+		</a>
+		
+	</div>
+	<div class="darkCover" style="display: none;z-index: 5;position: absolute;width: 100%;height: 100%;opacity: .7;background-color: #000;"></div>
+	<div class="lrBox" style="display: none;" onselectstart="return false;">
+		<div class="lrtop">
+			<a class="on_selected" href="javascript:;">Login</a>
+			<a class="" href="javascript:;">Register</a>
+		</div>
+		<div class="container">
+			<div class="container_Login" >
+				<form>
+					<input class="input" type="text" name="email" placeholder="Your Email...">
+					<input class="input" type="password" name="password" placeholder="Your password..">
+					<div style="font-size: .8em;margin-top: 20px;color: #AAAAAA;"><input class="checkbox" type="checkbox"> Autologon.</div>
+					<input class="button" type="button" value="SIGN IN">
+					<a href="javascript:;" style="margin: 25px;color: #00C8C8;font-size: .8em;">Forget your password</a>
+				</form>
+			</div>
+			<div class="container_Register" style="display: none;">
+				<form>
+					<input class="input" type="text" name="email" placeholder="Your Email..">
+					<input class="input" type="password" name="password" placeholder="Your password..">
+					<input class="input" type="password" name="confirmpassword" placeholder="Comfirm password..">
+					<input class="button" type="button" value="CREATE ACCOUNT">
+					<div class="f-text" style="padding: 0 30px;font-size: .9em;margin-top: 20px;color: #AAAAAA;">By Clicking 'Create Account', you agree to our <a href="javascript:;" style="display: inline-block;color: #42D0D0;">Privacy Policy <i class="icon-arrow-right"></i></a></div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="middle">
+		<!-- <div class="listbutton"><i class="fa fa-navicon fa-2x" style="font-size: 1.5em;"></i></div> -->
+		<div class="list">
+			<div class="list-box" style="padding-bottom: 100px;">
+				<div>MAIN<i class="fa fa-chevron-right fa-1x"></i></div>
+				<ul class="main-list">
+					<li>Browse</li>
+					<li>Activity</li>
+					<li>Radio</li>
+				</ul>
+				<div>YOUR MUSIC<i class="fa fa-chevron-right fa-1x"></i></div>
+				<ul class="yourmusic-list">
+					<li>Songs</li>
+					<li>Albums</li>
+					<li>Artists</li>
+				</ul>
+				<div>PLAYLISTS<i class="fa fa-chevron-right fa-1x"></i></div>
+				<ul class="playlists-list">
+					<li><i class="fa fa-music fa-1x"></i>Doo Wop</li>
+					<li><i class="fa fa-music fa-1x"></i>Pop Classics</li>
+					<li><i class="fa fa-music fa-1x"></i>Hipster</li>
+					<li><i class="fa fa-music fa-1x"></i>Doo Wop</li>
+					<li><i class="fa fa-music fa-1x"></i>Pop Classics</li>
+					<li><i class="fa fa-music fa-1x"></i>Hipster</li>
+					<li><i class="fa fa-music fa-1x"></i>Doo Wop</li>
+					<li><i class="fa fa-music fa-1x"></i>Pop Classics</li>
+					<li><i class="fa fa-music fa-1x"></i>Hipster</li>
+					<li><i class="fa fa-music fa-1x"></i>Doo Wop</li>
+					<li><i class="fa fa-music fa-1x"></i>Pop Classics</li>
+					<li><i class="fa fa-music fa-1x"></i>Hipster</li>
+					<li><i class="fa fa-music fa-1x"></i>Doo Wop</li>
+					<li><i class="fa fa-music fa-1x"></i>Pop Classics</li>
+					<li><i class="fa fa-music fa-1x"></i>Hipster</li>
+					<li><i class="fa fa-music fa-1x"></i>Doo Wop</li>
+					<li><i class="fa fa-music fa-1x"></i>Pop Classics</li>
+					<li><i class="fa fa-music fa-1x"></i>Hipster</li>
+					<li><i class="fa fa-music fa-1x"></i>Doo Wop</li>
+					<li><i class="fa fa-music fa-1x"></i>Pop Classics</li>
+					<li><i class="fa fa-music fa-1x"></i>Hipster</li>
+					<li><i class="fa fa-music fa-1x"></i>Doo Wop</li>
+					<li><i class="fa fa-music fa-1x"></i>Pop Classics</li>
+					<li><i class="fa fa-music fa-1x"></i>Hipster</li>
+				</ul>
+			</div>
+			<div class="scroll"></div>
+		</div>
+		<div class="mainbox">
+			<!-- <div class="cover" style="display: none;position: fixed;height: 100%;width: 100%;z-index: 5;"></div> -->
+			<div class="MainPage" style="left: 0;position: absolute;">
+				<div class="tophot">
+					<div class="scrollImg" style="position: relative;height: 100%;left: 0;transition: all .5s;"></div>
+					<div class="imgButton" style="position: absolute;bottom: 10px;right: 20px;"></div>
+				</div>
+				<div class="Singer" style="width: 80%;margin: 30px auto;"></div>
+				<div class="Song">
+					<div style="border-bottom: 1px solid #282828;">
+						<div style="width: 30%;display: inline-block;padding-left: 20px;color: #5B5B5B;">Song</div>
+						<div style="width: 200px;display: inline-block;"></div>
+						<div style="width: 20%;display: inline-block;color: #5B5B5B;">Singer</div>
+					</div>
+				</div>
+			</div>
+			<div class='SecondPage' style="top:0;opacity: 0;">
+				<div class='searchcontent'></div>
+				<div class="Singer" style="width: 75%;margin: 30px auto;display: none;">
+				</div>
+				<div class='Song'>
+					<div style='border-bottom: 1px solid #282828;'>
+						<div style='width: 30%;display: inline-block;padding-left: 20px;color: #5B5B5B;'>Song</div><div style='width: 200px;display: inline-block;'></div>
+						<div style='width: 20%;display: inline-block;color: #5B5B5B;'>Singer</div>
+					</div>
+				</div>
+			</div>
+			<div class="scroll"></div>
+			
+		</div>
+	</div>
+	<div class="SongChoice" style="display: none;">
+		<a href="javascript:;">Play Now</a>
+		<a href="javascript:;">Add to Playling List</a>
+		<a href="javascript:;"></a>
+		<a href="javascript:;"></a>
+		<a href="javascript:;"></a>
+	</div>
+	<div class="bottom" onselectstart="return false;">
+		<audio src=""></audio>
+		<div class="Part1">
+			<a href="javascript:;"><i class="play fa fa-step-backward fa-2x" style="font-size: 1.6em"></i></a>
+			<a href="javascript:;"><i class="play fa fa-play fa-2x" style="width: 30px;font-size: 2em;display: inline-block;"></i></a>
+			<a href="javascript:;"><i class="play fa fa-pause fa-2x" style="width: 30px;font-size: 2em;display: none;"></i></a>
+			<a href="javascript:;"><i class="play fa fa-step-forward fa-2x" style="font-size: 1.6em"></i></a>
+		</div>
+		<div class="Part2">
+			<div class="time-now" style="width: 60px;">00:00</div>
+			<div class="prograss"><div class="mover"></div></div>
+			<div class="time-longth" style="width: 60px;">00:00</div>
+		</div>
+		<div class="Part3">
+			<a class="lyrics" href="javascript:;" style="font-size: .8em;">LYRICS</a>
+			<a href="javascript:;"><i class="fa fa-bars fa-1x"></i></a>
+			<a href="javascript:;"><i class="fa fa-random fa-1x"></i></a>
+			<a href="javascript:;"><i class="fa fa-refresh fa-1x"	style="color: #2FD365;"></i></a>
+			<div class="volumecontrol" style="display: inline;">
+				<a href="javascript:;" style="display: inline;"><i class="fa fa-volume-up fa-1x" style="font-size: 1.5em"></i></a>
+				<div class="volume" style="margin-left: 5px;"><div class="mover"></div></div>
+			</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script>
+	<script src="jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="ScrollFun.js"></script>
+	<script type="text/javascript" src="MyMusicAudio.js"></script>
+	<script>
+		
+		
+
+
+		$(window).resize(function(){
+			if($(document).outerWidth()>=1079){
+				$(".list").css("left","0px");
+			}else{
+				$(".list").css("left","-250px");
+			}
+		});
+		var track=Array("MainPage");
+		var position=0;
+		var PageWidth=$(".mainbox").width();
+		$(".SecondPage").css("left",PageWidth+"px");
+		// $(".SecondPage").css("left","0px");
+		// console.log(PageWidth);
+
+		
+		// 加载照片和自动滚动、按钮初始化
+		var Photo=new Array("1.jpg","2.jpg","3.jpg","4.jpg","5.jpg");
+		var appendCon="",imgButton="",j=0;
+		for(var i=0;i<Photo.length;i++){
+			appendCon+="<div class=\""+i+"\" style=\"background-image:url(Photo/"+Photo[i]+");left:"+i*$(".mainbox .MainPage .tophot").innerWidth()+"px;\"></div>";
+			imgButton+="<div class=\""+i+"\"></div>";
+		}
+		$(".mainbox .MainPage .tophot .scrollImg").html(appendCon);
+		$(".mainbox .MainPage .tophot .imgButton").html(imgButton);
+		$(".mainbox .MainPage .tophot .imgButton>."+j).css("opacity", .9);
+		$(".mainbox .MainPage .tophot .imgButton>div").click(function(){
+			$(".mainbox .MainPage .tophot .imgButton>."+j).css("opacity", .4);
+			$(".mainbox .MainPage .tophot .scrollImg").css("left","-"+$(this).attr("class")*$(".mainbox .MainPage .tophot").innerWidth()+"px");
+			j=$(this).attr("class");
+			$(".mainbox .MainPage .tophot .imgButton>."+j).css("opacity", .9);
+		});
+		imgTimeset=setInterval(function(){
+			$(".mainbox .MainPage .tophot .imgButton>."+j).css("opacity", .4);
+			j = j==(Photo.length-1) ? 0 : ++j;
+			$(".mainbox .MainPage .tophot .scrollImg").css("left","-"+j*$(".mainbox .MainPage .tophot").innerWidth()+"px");
+			$(".mainbox .MainPage .tophot .imgButton>."+j).css("opacity", .9);
+		},3000);
+
+		// 加载推荐歌手
+		var Singer=new Array({"Name":"Owl City","Photo":"9.jpg"},
+							{"Name":"The Chainsomkers","Photo":"11.JPEG"},
+							{"Name":"Justin Beiber","Photo":"10.JPEG"},
+							{"Name":"Selena Gomez","Photo":"13.jpeg"},
+							{"Name":"One Direction","Photo":"12.jpeg"},
+							{"Name":"One Republic","Photo":"14.jpeg"});
+
+		// appendCon="",imgButton="";
+		// for(var i=0;i<Singer.length;i++){
+		// 	appendCon+="<a href=\"javascript:;\"><div class='SingerPhoto' style=\"background-image: url('Photo/"+Singer[i]["Photo"]+"');\"><p>a</p></div><div class='SingerName'>"+Singer[i]["Name"]+"</div></a>";
+		// }
+		// $(".mainbox .MainPage .Singer").html(appendCon);
+		AddSinger(Singer,".mainbox .MainPage .Singer");
+		// <a href="javascript:;">
+		// 	<div class="songName">Good Time</div>
+		// 	<div class="songControl">
+		// 		<i class="play fa fa-play fa-lg"></i>
+		// 		<i class="play fa fa-heart fa-lg"></i>
+		// 		<i class="play fa fa-download fa-lg"></i>
+		// 		<i class="play fa fa-list fa-lg"></i>
+		// 	</div>
+		// 	<div class="SingerName">Owl City</div>
+		// </a> .mainbox .MainPage .Song
+
+		// 加载推荐歌曲
+		var Song=new Array(["The Spectre", "Alan Walker", "Alan Walker/Alan Walker-The Spectre.mp3"],
+			["The Ocean", "Mike Perry;Shy Marti", "Shy Martin/Mike Perry;Shy Martin-The Ocean.mp3"],
+			["The Story of Us", "Taylor Swift", "Taylor Swift/Taylor Swift-The Story of Us.mp3"],
+			["The One", "The Chainsmokers", "The Chainsmokers/The Chainsmokers-The One.mp3"],
+			["The Fault In Our Stars (MMXIV)", "Troye Sivan", "Troye Sivan/Troye Sivan-The Fault In Our Stars (MMXIV).mp3"]);
+		AddSong(Song,".mainbox .MainPage .Song");
+		// appendSong="";
+		// for(i=0;i<Song.length;i++){
+		// 	appendSong+="<a href='javascript:;'><div class='songName'>"+Song[i][0]+"</div><div class='songControl'><i class='play fa fa-play fa-lg'></i><i class='play fa fa-heart fa-lg'></i><i class='play fa fa-download fa-lg'></i><i class='play fa fa-list fa-lg'></i></div><div class='SingerName'>"+Song[i][1]+"</div></a><div class='SongPlace'>"+Song[i][2]+"</div>";
+		// }
+		// $(".mainbox .MainPage .Song").append(appendSong);
+
+		// 登录注册界面显示与隐藏
+		$(".top .LoginOrRegister").click(function(){
+			$(".lrBox").css("display","block");
+			$(".darkCover").css({
+				"display":"block",
+				"opacity":".7"
+			});
+		});
+		$(".darkCover").click(function(){
+			$(".lrBox").css("display","none");
+			$(".darkCover").css("display","none");
+			$(".SongChoice").css("display","none");
+		});
+		// 登录和注册界面的切换
+		$(".lrBox .lrtop>a").click(function(){
+			if($(this).attr("class")!="on_selected"){
+				$(".lrBox .container>div").css("display","none");
+				$(".lrBox .container>div.container_"+$(this).html()).css("display","block");
+				$(".lrBox .lrtop>a").attr("class","");
+				$(this).attr("class","on_selected");
+			}
+		});
+
+		// $(".listbutton").click(function(){
+		// 	$(".list").css("left","0px");
+		// 	$(".cover").css("display","block");
+		// });
+		// $(".cover").click(function(){
+		// 	$(".list").css("left","-250px");
+		// 	$(this).css("display","none");
+		// });
+
+		// $(".list-box").resize(function(){
+		// 	console.log("ss");
+		// })
+
+
+		// 歌单的收放
+		$(".list .list-box>div").click(function(){
+			var ulist=$(this).next("ul");
+			if(ulist.css("height")!="0px"){
+				$(this).children("i").css("transform","rotate(0deg)");
+				ulist.css("height","0px");
+				listType.init();
+			}else{
+				$(this).children("i").css("transform","rotate(90deg)");
+				ulist.css("height","auto");
+				listType.init();
+			}
+		});
+		
+		$(".mainbox .MainPage .Song .fa-list").click(function(e){
+			$(".SongChoice").css({
+				"left":e.pageX+"px",
+				"top":e.pageY+"px",
+				"display":"block"
+			});
+			$(".darkCover").css({
+				"display":"block",
+				"opacity":"0"
+			});
+		});
+
+
+		// 搜索
+		$(".top .search .searchbutton").click(function(){
+			content=$(".top .search .searchbox").val().replace(/\s/g,'');
+			if(content!=""){
+				hitbutton(content);
+			}
+		});
+		$(".top .search .searchbox").keydown(function(){
+			if(event.keyCode==13){
+				content=$(".top .search .searchbox").val().replace(/\s/g,'');
+				if(content!=""){
+					hitbutton(content);
+				}
+			}
+		});
+		
+		function hitbutton(){
+			var Tracklength=track.length;
+			$(".SecondPage .searchcontent").html("Your search about \""+content+"\".");
+			if(!/SecondPage/.exec(track[position])){
+				$(".MainPage").css("left",-PageWidth+"px");
+				$(".SecondPage").css({
+					"opacity":"1",
+					"left":"0px"
+				});
+			}
+			position+=1;
+			track[position]="SecondPage."+content;
+			if(Tracklength>position+1){
+				for(var i=position+1;i<Tracklength;i++){
+					track[i]=null;
+				}
+			}
+			ForwardandBack();
+			console.log(track,position);
+
+			Search(content);
+		}
+
+		function Search(content){
+			var url='Search.php';
+			$.post(url,{
+				searchcontent:content
+			},function(data){
+				if(eval('('+data+')').status){
+					DATA=eval('('+data+')').message;
+					console.log(DATA);
+					if(DATA[1]){
+						AddSinger(DATA[1],".SecondPage .Singer");
+					}
+					if(DATA[0]){
+						AddSong(DATA[0],".SecondPage .Song");
+					}
+				}
+				// console.log(data);
+			});
+			var	searchType=new ScrollBar(".middle .mainbox",".middle .mainbox .scroll",".middle .mainbox .SecondPage");
+			searchType.init();
+
+		}
+		function ForwardandBack(){
+			if(position>0){
+				$(".top .Backbutton").children("i").css("color","#FFF");
+			}
+			if(position<track.length-1){
+				$(".top .Forwardbutton").children("i").css("color","#FFF");
+			}
+		}
+
+		function AddSinger(array,place){
+			appendCon="";
+			for(var i=0;i<array.length;i++){
+				appendCon+="<a href=\"javascript:;\"><div class='SingerPhoto' style=\"background-image: url('Photo/"+array[i]["Photo"]+"');\"><p>a</p></div><div class='SingerName'>"+array[i]["Name"]+"</div></a>";
+			}
+			$(place).html(appendCon);
+		}	
+		function AddSong(array,place){
+			appendSong="";
+			for(i=0;i<array.length;i++){
+				appendSong+="<a href='javascript:;'><div class='songName'>"+array[i][0]+"</div><div class='songControl'><i class='play fa fa-play fa-lg'></i><i class='play fa fa-heart fa-lg'></i><i class='play fa fa-download fa-lg'></i><i class='play fa fa-list fa-lg'></i></div><div class='SingerName'>"+array[i][1]+"</div></a><div class='SongPlace'>"+array[i][2]+"</div>";
+			}
+			$(place).append(appendSong);
+		}
+
+		$(".top .Backbutton").click(function(){
+			if(position>0){
+				position-=1;
+				console.log(position);
+				if(position==0){
+					$(this).children("i").css("color","#5E5E5E");
+				}else if(/SecondPage/.exec(track[position])){
+					Search(/\.(\w+)/.exec(track[position])[1]);
+				}
+				ForwardandBack();
+				// console.log("ss");
+			}
+			// console.log($(this).children("i").css("color"));
+		});
+		$(".top .Forwardbutton").click(function(){
+			if(position<track.length-1){
+				position+=1;
+				if(position==track.length-1){
+					$(this).children("i").css("color","#5E5E5E");
+				}
+				if(/SecondPage/.exec(track[position])){
+					Search(/\.(\w+)/.exec(track[position])[1])
+				}
+				ForwardandBack();
+				// console.log("ss");
+			}
+			// console.log($(this).children("i").css("color"));
+		});
+
+		// $(".top .search a").click(function(){
+		// 	var SearchCon=$(".top .search input").val().replace(/\s/g,"");
+		// 	if(SearchCon!=""){
+		// 		$.post(
+		// 			"Search.php",
+		// 			{Content:SearchCon},
+		// 			function(data){
+						
+		// 			}
+		// 		);
+		// 	}
+		// });
+
+		var listType=new ScrollBar(".middle .list",".middle .list .scroll",".middle .list .list-box");
+		var	mainboxType=new ScrollBar(".middle .mainbox",".middle .mainbox .scroll",".middle .mainbox .MainPage");
+
+		$("body").mousewheel(function(){
+			window.event.preventDefault();
+		});
+		listType.init();
+		mainboxType.init();
+
+
+	</script>
+</body>
+</html>
+
+

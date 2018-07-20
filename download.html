@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<a href=""></a>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script>
+	<script>
+		$.post("download.php",{},function(data){
+			var msg=eval('('+data+')');
+			for(var i=0;i<msg.length;i++){
+				$("body").append("<a href='doDownload.php?filename=musicoffice/MusicPocket/"+msg[i]+"'>"+msg[i]+"</a><br>")
+			}
+			
+		});
+
+	</script>
+</body>
+</html>

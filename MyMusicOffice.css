@@ -1,0 +1,427 @@
+*{
+	font-family: Montserrat;
+}
+.top,
+.bottom{
+	position: fixed;
+	width: 100%;
+	height: 80px;
+	background-color: #282828;
+}
+.top{
+	top: 0;
+	line-height: 80px;
+	border-bottom: 2px solid #181818;
+}
+
+.top>a>i{
+	color: #5E5E5E;
+	margin-left: 20px;
+	font-size: 2.5em;
+	/*transform: translateY(25%);*/
+}
+.top .search{
+	display: inline-block;
+	position: relative;
+	margin-left: 50px;
+}
+.top .search input{
+	border:0;
+	outline:none;
+	height: 30px;
+	width: 190px;
+	padding-left: 10px;
+	padding-right: 30px;
+	border-radius: 20px;
+	font-size: 1em;
+}
+.top .search i{
+	position: absolute;
+	top: 31px;
+	right: 10px;
+}
+.top .LoginOrRegister{
+	position: relative;
+	display: inline-block;
+	/*transform: translateY(20%);*/
+	float: right;
+	margin-right: 20px;
+	/*border-radius: 50px;*/
+	color: #AAAAAA;
+	transition: .3s;
+	/*background-color: #FFF;*/
+}
+.top .LoginOrRegister:hover{
+	color: #2FD365;
+}
+.lrBox{
+	/*display: inline-block;*/
+	position: absolute;
+	height: 400px;
+	width: 300px;
+	top: 90px;
+	right: 10px;
+	background-color: #282828;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px;
+	z-index: 10;
+}
+.lrBox .lrtop{
+	margin-top: 20px;
+	text-align: center;
+}
+.lrBox .lrtop>a{
+	display: inline-block;
+	margin: 0 30px;
+	color: #AAAAAA;
+	transition: color .5s;
+}
+.lrBox .lrtop>a:hover,
+.lrBox .lrtop>a.on_selected{
+	color: #00C8C8;
+}
+.lrBox .container_Login,
+.lrBox .container_Register{
+	margin-top:30px;
+	text-align: center;
+}
+
+.lrBox .container_Login input.input,
+.lrBox .container_Register input.input{
+	outline:none;
+	font-size: .9em;
+	width: 70%;height: 20px;
+	margin-top: 30px;
+	padding: 5px;
+	border: none;
+	/*border: 1px solid #E7E7E7; */
+	background-color: #5D5D5D;
+	opacity: .5;
+}
+.lrBox .container_Login input.input:focus,
+.lrBox .container_Register input.input:focus{
+	background-color: #5D5D5D;
+	opacity: .9;
+}
+
+.lrBox .container_Login input.button,
+.lrBox .container_Register input.button{
+	cursor: pointer;
+	padding: 15px 25px;
+	margin-top: 20px;
+	border: none;
+	color: #AAAAAA;
+	background-color: #5D5D5D;
+	opacity: .5;
+}
+.lrBox .container_Login input.button:hover,
+.lrBox .container_Register input.button:hover{
+	color: #FFFFFF;
+	background-color: #5D5D5D;
+	opacity: .9;
+	border: none;
+	transition: .2s;
+}
+
+
+
+.bottom{
+	line-height: 80px;
+	text-align: center;
+	bottom: 0;
+	border-top: 2px solid #181818;
+	cursor: default;
+}
+.bottom>.Part1,
+.bottom>.Part2,
+.bottom>.Part3{
+	display: inline;
+}
+.bottom>div>i{
+	color: #C6C6C6;
+	cursor: pointer;
+}
+.bottom>.Part1 i.play{
+	margin: 0 30px;
+	/*transform: translateY(25%);*/
+}
+.bottom>div>div{
+	display: inline-block;
+	color: #A9A9A9;
+	font-size: .7em;
+}
+.bottom>.Part3>*{
+	margin: 0 10px;
+}
+.bottom>.Part1 a,
+.bottom>.Part3 a{
+	color: #C6C6C6;
+	display: inline-block;
+}
+.bottom>.Part3 a{
+	transition: .5s;
+}
+.bottom>.Part3 a:hover{
+	color: #2FD365;
+}
+.bottom>div>.time-now,
+.bottom>div>.time-longth{
+	width: 55px;
+	font-size: .7em;
+}
+.bottom .prograss,
+.bottom .volume{
+	height: 7px;
+	background-color: #5D5D5D;
+}
+.bottom .prograss{
+	width: 35%;
+}
+.bottom .volume{
+	display: inline-block;
+	width: 100px;
+	/*transform: translateY(-35%)*/
+}
+.bottom .mover{
+	width: 0%;
+	height: 100%;
+	background-color: #2FD365;
+}
+
+
+
+.middle{
+	position: fixed;
+	top: 82px;
+	bottom: 82px;
+	width: 100%;
+	background-color: #181818;
+}
+.listbutton{
+	/*z-index: 10;*/
+	color: #FFF;
+	display: none;
+	position: fixed;
+	top: 100px;
+	left: 0;
+	background-color: #282828;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+.list{
+	z-index: 10;
+	position: relative;
+	display: inline-block;
+	width: 20%;
+	height: 100%;
+	/*padding: 10px;*/
+	background-color: #282828;
+	overflow: hidden;
+	transition: all .3s;
+}
+.list-box *{
+	cursor: pointer;
+}
+.list-box>div{
+	margin-left: 10px;
+	margin-top: 20px;
+	font-size: .8em;
+	color: #AAAAAA;
+	transition: all .1s;
+}
+.list-box>ul{
+	margin-left: 20px;
+	color: #AAAAAA;
+	overflow: hidden;
+}
+.list-box>div>i{
+	font-size: .8em;
+	margin-left: 5px;
+	transform: rotate(90deg);
+	transition: all .3s;
+
+}
+.list-box>ul>li{
+	margin-top: 15px;
+	font-size: .8em;
+}
+.list-box>ul>li>i{
+	margin-right: 15px; 
+}
+
+
+
+.mainbox{
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 80%;
+	height: 100%;
+	background-color: #181818;
+	overflow: hidden;
+	/*background-color: #FFF;*/
+}
+.mainbox .MainPage,
+.mainbox .SecondPage{
+	position: absolute !important;
+	width: 100%;
+	/*left: 0;*/
+	/*height: 100%;*/
+	padding-top: 40px;
+	padding-bottom: 50px;
+	background-color: #181818;
+	transition: left .6s;
+}
+.mainbox .MainPage .tophot{
+	position: relative;
+	height: 400px;
+	width: 80%;
+	margin: 0 auto;
+	background-color: #000;
+	overflow: hidden;
+}
+.mainbox .MainPage .tophot .scrollImg>div{
+	height: 100%;
+	width: 100%;
+	top: 0;
+	position: absolute;
+	background-position: center -90px;
+}
+.mainbox .MainPage .tophot .imgButton>div{
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin: 0 10px;
+	border-radius: 50px;
+	background-color: #000;
+	transition: all .1s;
+	opacity: .4;
+	cursor: pointer;
+}
+.mainbox .MainPage .tophot .imgButton>div:hover{
+	opacity: .9;
+}
+
+.mainbox .Singer>a{
+	display: inline-block;
+	height: 40px;
+	padding: 10px;
+	margin: 10px 10px;
+	background-color: #282828;
+	line-height: 40px;
+	font-size: 1.2em;
+	color: #FFF;
+	transition: all .5s;
+	opacity: .7;
+}
+
+.mainbox .Singer>a:hover{
+	opacity: 1;
+}
+.mainbox .Singer>a div.SingerPhoto{
+	display: inline-block;
+	width: 40px;height: 40px;
+	background-size: cover;
+	border-radius: 100px;
+	background-position: center;
+	background-size: cover;
+}
+.mainbox .Singer div.SingerName{
+	display: inline-block;
+	margin: 0 20px;
+	text-align: center;
+}
+
+.mainbox .Song{
+	width: 80%;
+	margin: 50px auto;
+	line-height: 50px;
+}
+.mainbox .Song>a{
+	color: #FFF;
+	height: 50px;
+	width: 100%;
+	border-bottom: 1px solid #282828;
+	transition: .2s;
+}
+.mainbox .Song>a:hover{
+	border-bottom: 1px solid #2FD365;
+}
+.mainbox .Song>a>div{
+	display: inline-block;
+}
+.mainbox .Song .songName{
+	height: 100%;
+	width: 30%;
+	padding-left: 20px;
+	overflow: hidden;
+}
+.mainbox .Song .songControl{
+	height: 100%;
+	width: 200px;
+	/*margin: 0 20px;*/
+	/*background-color: #FFF;*/
+}
+.mainbox .Song .songControl>i{
+	margin: 0 10px;
+	font-size: .9em;
+	transition: .2s;
+	cursor: pointer;
+}
+.mainbox .Song .songControl>i:hover{
+	color: #2FD365;
+}
+.mainbox .Song .SingerName{
+	width: 30%;
+	overflow: hidden;
+	/*text-align: center;*/
+}
+.mainbox .SongPlace{
+	display: none;
+}
+
+
+.SecondPage .searchcontent{
+	width: 80%;
+	color: #FFF;
+	font-size: 1.3em;
+	margin: 40px auto;
+	line-height: 100px;
+}
+
+
+
+
+.SongChoice{
+	position: absolute;
+	width: 150px;
+	height: auto;
+	padding: 10px 0;
+	background-color: #282828;
+	font-size: .7em;
+	border-radius: 5px;
+	z-index:10;
+}
+.SongChoice>a{
+	max-width: 100%;
+	height: 30px;
+	padding: 5px;
+	color: #FFF;
+	line-height: 30px;
+	background-color: #282828;
+	transition: .2s;
+}
+.SongChoice>a:hover{
+	background-color: #FFF;
+	color: #000;
+	opacity: .6;
+}
+
+
+p{
+	display: inline;
+	visibility: hidden;
+}
+
+

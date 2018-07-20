@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<a href="javascript:;" class="buttom">JustAtest</a>
+	<a href="resigeter.html" target="_blank">ss</a>
+	<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script>
+	<script>
+		var url='Login.php?act=count';
+		$("a").click(function(){
+			$.post(url,function(data){
+				console.log(data);
+			});
+		})
+	</script>
+</body>
+</html>

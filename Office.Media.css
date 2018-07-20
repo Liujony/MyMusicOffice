@@ -1,0 +1,189 @@
+@media screen and (min-width: 1201px){
+	.list{
+		left: 0px;
+		width: 20%;
+	}
+	.mainbox{
+		width: 80%;
+	}
+	.bottom{
+		line-height: 80px;
+	}
+	.bottom>.Part1,
+	.bottom>.Part2,
+	.bottom>.Part3{
+		display: inline; 
+	}
+	.bottom>div>i.play{
+		margin-right: 30px;
+	}
+	.bottom .prograss{
+		width: 35%;
+	}
+	.bottom .volume{
+		display: inline-block;
+	}
+}
+@media screen and (max-width: 1200px) and (min-width: 1081px){
+	.list{
+		left: 0px;
+		width: 20%;
+	}
+	.mainbox{
+		width: 80%;
+	}
+	.bottom{
+		line-height: 80px;
+	}
+	.bottom>.Part1,
+	.bottom>.Part2,
+	.bottom>.Part3{
+		display: inline;
+	}
+	.bottom>div>i.play{
+		margin-right: 20px;
+	}
+	.bottom .prograss{
+		width: 35%;
+	}
+	.bottom .volume{
+		display: inline-block;
+	}
+	.Part3>*{
+		margin: 0 20px;
+	}
+}
+@media screen and (max-width: 1080px) and (min-width:  961px){
+	.listbutton{
+		display: inline-block;
+	}
+	.list{
+		left: -250px;
+		width: 250px;
+	}
+	.mainbox{
+		width: 100%;
+	}
+	.bottom{
+		line-height: 80px;
+	}
+	.bottom>.Part1,
+	.bottom>.Part2,
+	.bottom>.Part3{
+		display: inline;
+	}
+	.bottom>div>i.play{
+		margin-right: 20px;
+	}
+	.bottom .prograss{
+		width: 35%;
+	}
+	.bottom .volume{
+		display: none;
+	}
+}
+@media screen and (max-width: 960px) and (min-width: 671px){
+	.listbutton{
+		display: inline-block;
+	}
+	.list{
+		left: -250px;
+		width: 250px;
+	}
+	.mainbox{
+		width: 100%;
+	}
+	.bottom{
+		line-height: 40px;
+	}
+	.bottom>.Part3{
+		display: block;
+	}
+	.bottom>div>i.play{
+		margin-right: 20px;
+	}
+	.bottom .prograss{
+		width: 35%;
+	}
+	.bottom>.Part3>*{
+		margin: 0 40px;
+	}
+}
+@media screen and (max-width: 670px) and (min-width: 321px){
+	.listbutton{
+		display: inline-block;
+	}
+	.list{
+		left: -250px;
+		width: 250px;
+	}
+	.mainbox{
+		width: 100%;
+	}
+	.bottom{
+		line-height: 40px;
+		height: 120px;
+	}
+	.bottom>.Part1,
+	.bottom>.Part2,
+	.bottom>.Part3{
+		display: block;
+	}
+	.bottom>div>i.play{
+		margin: 0 55px;
+	}
+	.bottom .prograss{
+		width: 65%;
+	}
+	.bottom>.Part3>*{
+		margin: 0 15px;
+	}
+}
+@media screen and (max-width: 320px) and (min-width: 0px){
+	.top{
+		height: 50px;
+		line-height: 50px;
+		border-bottom: 2px solid #181818;
+	}
+	.top>i{
+		font-size: 1.3em;
+		margin-left: 20px;
+		transform: translateY(25%);
+	}
+	.top .search{
+		display: inline-block;
+		position: relative;
+		margin-left: 10px;
+	}
+	.listbutton{
+		display: inline-block;
+	}
+	.list{
+		left: -250px;
+		width: 250px;
+	}
+	.mainbox{
+		width: 100%;
+	}
+	.bottom{
+		line-height: 30px;
+		height: 100px;
+	}
+	.bottom>.Part1,
+	.bottom>.Part2,
+	.bottom>.Part3{
+		display: block;
+	}
+	.bottom>div>i.play{
+		margin: 0 30px;
+	}
+	.bottom .prograss{
+		width: 60%;
+	}
+	.bottom>.Part3>*{
+		margin: 0 10px;
+	}
+	.bottom .volume{
+		display: none;
+	}
+}
